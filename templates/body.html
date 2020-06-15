@@ -1,0 +1,110 @@
+<head>
+
+    <script>
+        function sendEmail(el) {
+            document.getElementById('form_subject').value = el.name;
+            window.location.href = "#contact"
+        }
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div id="about" class="col-lg-12 mx-auto">
+                    <h2>Sobre</h2>
+                    <p class="lead"> Criada em 2006, somos uma empresa de assistência técnica para manutenção corretiva e preventiva em máquinas hospitalares (Autoclave, Mesa, Foco cirúrgico, Lavadora Ultrassônica, etc) além de possuirmos um estoque com peças de reposição à pronta entrega. Trazemos a experiência de quem trabalha no ramo a mais de 13 anos, levando aos nossos clientes a confiança e segurança de nossos serviços.
+
+                        Somos representante autorizado Ortosintese, AMCP.
+                    </p>
+                    <ul>
+                        <li> <b>Visão</b>: “Se tornar referência em nosso seguimento, fornecendo o melhor serviço de manutenção de equipamento hospitalar, sempre buscando atender às necessidades e expectativas dos nossos clientes.” </li>
+                        <li> <b> Missão </b>: “Oferecer serviços de qualidade em tudo que fazemos.” </li>
+                        <li> <b> Valores </b>: “RESPEITO, COMPROMETIMENTO, FLEXIBILIDADE, SUSTENTABILIDADE.” </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 mx-auto">
+                    <h2>Nossos serviços</h2>
+                    <p class="lead">
+
+                    </p>
+                </div>
+
+            </div>
+
+
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div id="pieces" class="col-lg-12 mx-auto">
+                    <h2>Peças</h2>
+                    <p class="lead"></p>
+
+                    {% include 'product-list.html' %}
+
+                    <!-- <table = class="table" style="width:100%">
+                        <tr>
+                            <td style="width:50%">
+                                <div class="list-group">
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. ATUADOR ASTEN">ATUADOR ASTEN</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. BOBINA DE PAPEL TERMICA">BOBINA DE PAPEL TERMICA</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. BOBINA DE PAPEL TERMICA 30M">BOBINA DE PAPEL TERMICA 30M</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. DIAFRAGMA GRANDE">DIAFRAGMA GRANDE</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. ELETRODO CURTO">ELETRODO CURTO</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. ELETRODO LONGO">ELETRODO LONGO</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. FILTRO DE AR DURAZZO">FILTRO DE AR DURAZZO</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. FILTRO DE POLIPROPILENO 1 MICRA">FILTRO DE POLIPROPILENO 1 MICRA</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. FILTRO DE POLIPROPILENO 5 MICRA">FILTRO DE POLIPROPILENO 5 MICRA</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. GUARNIÇÃO PARA PORTA AUTOCLAVE">GUARNIÇÃO PARA PORTA AUTOCLAVE</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. GUARNIÇÃO PORTA DA TERMO">GUARNIÇÃO PORTA DA TERMO</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. IMPRESSORA TERMICA FH- 190">IMPRESSORA TERMICA FH- 190</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. IMPRESSORA">IMPRESSORA</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. MANOMETRO">MANOMETRO</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. MICRO AMPC">MICRO AMPC</a>
+                                </div>
+
+                            </td>
+
+                            <td>
+                                <div class="list-group">
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. MANOVACUOMETRO">MANOVACUOMETRO</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. MEMBRANA TB-100">MEMBRANA TB-100</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. MOTOR DA OSMOSE REVERSA">MOTOR DA OSMOSE REVERSA</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. PRESSOSTATO">PRESSOSTATO</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. REGISTRO AGULHA">REGISTRO AGULHA</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. REGISTRO AGULHA ¼- COM ALAVANCA">REGISTRO AGULHA ¼- COM ALAVANCA</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. REGISTRO AGULHA ¾ - COM ALAVANCA">REGISTRO AGULHA ¾- COM ALAVANCA</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. REPARO ASCOVAL">REPARO ASCOVAL</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. TRANSDUTOR DANFOSS">TRANSDUTOR DANFOSS</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. VALVULA ASCOVAL ¾">VALVULA ASCOVAL ¾</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. VALVULA ½">VALVULA ½</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. VALVULA ¼">VALVULA ¼</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. VALVULA DE RETENÇÃO ½">VALVULA DE RETENÇÃO ½</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. VALVULA DE RETENÇÃO ¾">VALVULA DE RETENÇÃO ¾</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. VALVULA DE SEGURANÇA COM GATILHO">VALVULA DE SEGURANÇA COM GATILHO</a>
+                                    <a href="javascript:void(0);" onclick="sendEmail(this);" class="list-group-item list-group-item-action" name="Ref. OUTRAS PEÇAS">ENTRE OUTRAS PEÇAS</a>
+                                </div>
+
+                            </td>
+
+                        </tr>
+
+                    </table> -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>

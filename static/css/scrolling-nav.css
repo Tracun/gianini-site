@@ -1,0 +1,31 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/template-overviews/scrolling-nav)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+
+header {
+  padding: 154px 0 100px;
+}
+
+#nav {
+  
+  background-image: url('http://www.alphaprotecao.com.br/wp-content/uploads/2016/08/manutencao.jpg');
+  background-size: cover; /*caso nao pertenda utilizar htm5 substitua 'cover' por 100%*/
+  background-repeat: no-repeat;
+  
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 156px 0 100px;
+  }
+}
+
+section {
+  padding: 110px 0;
+}
+
+td {
+	width: 70%;
+}

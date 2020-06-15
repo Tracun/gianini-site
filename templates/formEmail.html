@@ -1,0 +1,134 @@
+<!-- Container do body-->
+
+<head>
+    {% load static %}
+    <style type="text/css">
+
+ input{
+     font-weight:bold;
+    }
+   #contact{
+            text-align: center;
+        }
+</style>
+
+</head>
+
+<section class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div id="contactForm" class="col-lg-12 mx-auto">
+                <h2>Contato</h2>
+                <p class="lead"></p>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-lg-offset-2">
+
+                            <form method="POST">
+
+                                <div class="messages"></div>
+
+                                <div class="controls">
+
+                                    {% csrf_token %}
+                                    {% load widget_tweaks %}
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_name">Nome *</label>
+                                                
+                                                {{ form.name | add_class:"form-control" }}
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_company">Empresa</label>
+
+                                                {{ form.company | add_class:"form-control" }}
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_email">Email *</label>
+                                                {{ form.email | add_class:"form-control" }}
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_phone">Telefone</label>
+                                                {{ form.phone | add_class:"form-control" }}
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="form_company">Assunto *</label>
+                                                {{ form.subject | add_class:"form-control" }}
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="form_message">Mensagem *</label>
+                                                {{ form.message | add_class:"form-control" }}
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-12">
+                                            
+                                            <button type="submit" class="btn btn-success btn-send">Enviar</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <p class="text-muted"><strong>*</strong> Campos obrigatórios.</p>
+                                        </div> 
+                                    </div>
+                                </div>
+                                
+                            </form>
+
+                        </div><!-- /.8 -->
+                        
+                        <div id="contact" class="col-lg-1 col-lg-offset-5">
+
+                        </div>
+
+                        <div id="contact" class="content-column one_half">
+                            <p><strong>Contatos</strong></p>
+                            <b>Amanda</b> - <img src="{% static 'images/whats.png' %}" height="28" width="28"> (11) 96587-8760
+                            <br>
+                            <b>Amadeu</b> - <img src="{% static 'images/whats.png' %}" height="28" width="28"> (11) 98558-8215
+                            <br>
+                            <b>Amanda/Amadeu</b> - (11) 3947-9512
+                            <br>
+                            Email: <a href="#"><b>contato@gianinimanutencao.com.br</b></a>
+                            <br>
+                            Rua: Alto do Rio Bravo - São Paulo – SP
+                            <br>
+
+                        </div>
+
+                    </div>
+
+                </div> <!-- /.row-->
+
+            </div> <!-- /.container-->
+
+        </div> <!-- FIM DO col-lg-12 mx-auto-->
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- <script src="../js/validator.js"></script> -->
+<!-- <script src="../js/contact.js"></script> -->

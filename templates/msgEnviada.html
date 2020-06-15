@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Mensagem enviada !</title>
+
+  {% load static %}
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %} " rel="stylesheet">
+  <link
+    href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/clean-blog.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <section id="msgEnviada" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Sua mensagem foi enviada com sucesso!</h2>
+          <p class="lead">Em breve entraremos em contato com você a respeito da sua mensagem.</p>
+        </div>
+        <div class="col-md-12">
+          <a href=../home target="_self"><input type="submit" class="btn btn-success btn-send"
+              value="Voltar ao site"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
