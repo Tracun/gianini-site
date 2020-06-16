@@ -32,7 +32,7 @@ SECRET_KEY = 'f9s!ck7o8&(3j&^zxgraj7y@_y_pv14_x(9t5pzmok&qlb@&-@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["gianini-site.herokuapp.com"]
 
 
 # Application definition
