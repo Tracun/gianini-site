@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     # My own settings
     'pages',
+    'products',
     'sendemail.apps.SendemailConfig',
 ]
 
